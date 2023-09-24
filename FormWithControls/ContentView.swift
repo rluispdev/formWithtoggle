@@ -12,25 +12,30 @@ struct ContentView: View {
     
     
     var body: some View {
+        
         NavigationStack {
+            
             Form {
-                Section {
-                    TextField("Username", text: $userSettings.username)
-                    Toggle(isOn: $userSettings.isPrivate, label: {
-                        Text("Private Accunt")
-                    })
+                Section("Profile") {
                     
-                } header: {
-                    Text("PROFILE")
+                    TextField("Username", text: $userSettings.username)
+                    
+                    Toggle(isOn: $userSettings.isPrivate, label: {
+                        Text("Private Accunt")})
+                    
+                    Picker(selection: $userSettings.ringtone, label: Text("Ringtone")) {
+                        ForEach(userSettings.ringtones, id: \.self) { ringtone in
+                            Text(ringtone)
+                        }
+                    }
+  
                 }
-
+                .navigationTitle("Settings")
             }
-            .navigationTitle("Settings")
+            
         }
-     
     }
 }
-
 #Preview {
     ContentView()
 }
