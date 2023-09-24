@@ -8,14 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var userSettings = UserSettings()
+    
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            Form {
+                Section {
+                    TextField("Username", text: $userSettings.username)
+                } header: {
+                    Text("PROFILE")
+                }
+
+            }
+            .navigationTitle("Settings")
         }
-        .padding()
+     
     }
 }
 

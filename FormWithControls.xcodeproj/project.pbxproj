@@ -11,6 +11,7 @@
 		8F33BC012AC090A5008CA636 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F33BC002AC090A5008CA636 /* ContentView.swift */; };
 		8F33BC032AC090A6008CA636 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F33BC022AC090A6008CA636 /* Assets.xcassets */; };
 		8F33BC062AC090A6008CA636 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F33BC052AC090A6008CA636 /* Preview Assets.xcassets */; };
+		8F33BC0D2AC0917A008CA636 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F33BC0C2AC0917A008CA636 /* UserSettings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		8F33BC002AC090A5008CA636 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8F33BC022AC090A6008CA636 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F33BC052AC090A6008CA636 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8F33BC0C2AC0917A008CA636 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				8F33BBFE2AC090A5008CA636 /* FormWithControlsApp.swift */,
 				8F33BC002AC090A5008CA636 /* ContentView.swift */,
+				8F33BC0C2AC0917A008CA636 /* UserSettings.swift */,
 				8F33BC022AC090A6008CA636 /* Assets.xcassets */,
 				8F33BC042AC090A6008CA636 /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F33BC012AC090A5008CA636 /* ContentView.swift in Sources */,
+				8F33BC0D2AC0917A008CA636 /* UserSettings.swift in Sources */,
 				8F33BBFF2AC090A5008CA636 /* FormWithControlsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
