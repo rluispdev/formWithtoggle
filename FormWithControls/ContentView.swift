@@ -16,6 +16,10 @@ struct ContentView: View {
             Form {
                 Section {
                     TextField("Username", text: $userSettings.username)
+                    Toggle(isOn: $userSettings.isPrivate, label: {
+                        Text("Private Accunt")
+                    })
+                    
                 } header: {
                     Text("PROFILE")
                 }
